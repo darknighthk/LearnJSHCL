@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="script.js">
+    </script>
+</head>
+
+<body>
+
+    <div>
+        <center>
+            <h1 id="header">Registration Form</h1>
+            Name: <input type="text" placeholder="Enter the name" id="name"><br>
+            UserName: <input type="text" placeholder="Enter the username" id="username"><br>
+            Password: <input type="password" placeholder="Enter the password" name="" id="password"><br>
+            Mobile Number: <input type="number" placeholder="Enter the mobile number" name="" id="mobilenumber"><br>
+            Address: <textarea placeholder="Enter the address" id="address"></textarea><br>
+
+            <input type="submit" onclick="displayDetails()" value="Register" id="register"><br>
+
+        </center>
+    </div>
+
+    <div id="display">
+        <center>
+            <h1>User Details</h1>
+            <p id="rname"></p>
+            <p id="rusername"></p>
+            <p id="rmobile"></p>
+            <p id="raddress"></p>
+        </center>
+    </div>
+
+
+
+</body>
+
+</html>

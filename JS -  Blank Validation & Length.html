@@ -1,0 +1,28 @@
+<html>
+<script type="text/javascript">
+    function validate() {
+        var str = document.getElementById("name").value;
+        var n = str.length;
+        if (n == "") {
+            document.getElementById("warning").innerHTML = "Please enter your name";
+        } else {
+            document.getElementById("success").innerHTML = "Length of your name is " + n;
+        }
+    }
+</script>
+
+ 
+
+<body>
+    <h3>Blank Validation & length Validation</h3>
+    Enter your name :
+    <input id="name" type="text" />
+    <div id="warning" style="color: ff0000;"></div>
+    <input id="validate" onclick="validate()" value="Validate" type="button"/>
+    <br>
+    <div id="success"></div>
+</body>
+
+ 
+
+</html>

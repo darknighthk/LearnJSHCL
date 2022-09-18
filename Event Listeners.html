@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+   <script>
+    
+       //Fill code here
+       function warning() {
+        var editor = document.getElementById("editor");
+        editor.addEventListener("copy", function(event) {
+            event.preventDefault();
+        }, false);
+        editor.addEventListener("cut", function(event) {
+            event.preventDefault();
+        }, false);
+        editor.addEventListener("paste", function(event) {
+            event.preventDefault();
+        }, false);
+        alert('Cut/Copy/Paste is restricted.');
+       }
+
+ 
+
+   </script>
+</head>
+<body>
+    <center>
+        <h2>Programming Contest</h2>
+        <label>Type code here</label>
+        <textarea cols="40" rows="10" id="editor" oncopy="warning()" oncut="warning()" onpaste="warning()"></textarea>
+    </center>    
+</body>
+</html>
